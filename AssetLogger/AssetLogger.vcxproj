@@ -104,7 +104,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -118,17 +118,21 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssetLogger.cpp" />
+    <ClCompile Include="AssetLoggerApp.cpp" />
+    <ClCompile Include="AssetLoggerFrame.cpp" />
     <ClCompile Include="AssetLogging.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Input.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AssetLoggerApp.h" />
+    <ClInclude Include="AssetLoggerFrame.h" />
     <ClInclude Include="AssetLogging.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Input.h" />
@@ -139,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="AssetLoggerIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

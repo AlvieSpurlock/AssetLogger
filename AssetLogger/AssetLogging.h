@@ -67,6 +67,7 @@ static void ShowLicense()
 }
 
 
+
 void Prompt()
 {
 	if (Demo)
@@ -429,8 +430,9 @@ void SaveAssetInfo(vector<string>& assets, string fileName)
 {
 	if (!Demo)
 	{
-		ifstream newFile(fileName);
+	ifstream newFile(fileName);
 	string line;
+
 	if (newFile.is_open())
 	{
 		Console::SetForegroundColor(Yellow);
@@ -522,7 +524,7 @@ void SaveAssetInfo(vector<string>& assets, string fileName)
 
 					Console::SetForegroundColor(White);
 					cout << "\nWhich one is the problem?\n\n";
-					size_t problemIndex = Input::GetInteger("Answer:  ", 0, assets.size(), LightGrey) - 1;
+					size_t problemIndex = Input::GetInteger("Answer:  ", 0, assets.size(), LightGrey);
 
 					UpdateAsset(problemIndex, assets);
 				}
@@ -716,7 +718,7 @@ void SaveAssetInfo(vector<string>& assets, string fileName)
 		if (!Demo)
 		{
 			string platform = Input::GetString("Platform: ", White);
-			string assetLocation = Input::GetString("Asset Location(in Project: ", White);
+			string assetLocation = Input::GetString("Asset Location(in Project): ", White);
 			string assetUse = Input::GetString("Asset Use(in Project): ", White);
 			string assetName = Input::GetString("Asset Name(on Platform): ", White);
 			string assetMaker = Input::GetString("Asset Maker(on Platform): ", White);
