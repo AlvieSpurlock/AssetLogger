@@ -1,6 +1,6 @@
 # Asset Logger
 
-Asset Logger is a lightweight console tool built for indie game developers who need a fast, reliable way to document game assets for Steam submissions. It collects platform, usage, creator, and license information, then exports everything into a clean, submission‑ready CSV file.
+Asset Logger is a lightweight tool built for indie game developers who need a fast, reliable way to document game assets for Steam submissions. It collects platform, usage, creator, and license information, then exports everything into a clean, submission‑ready CSV file.
 
 ## Overview
 
@@ -128,4 +128,4 @@ Platform,Location(in Game),Use(in Game),Asset Name(on Platform),Asset Maker(on P
 
 Asset Logger is a simple, fast, and reliable tool for documenting game assets during Steam submissions. By guiding developers through each required field and exporting everything into a clean CSV, it removes the stress and guesswork from asset compliance.
 
-Requires: Python 3.x
+Requires: C++23
